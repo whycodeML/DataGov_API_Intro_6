@@ -1,10 +1,43 @@
-﻿@model DataGov_API_Intro_6.Models.Parks
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" type="text/css" href="~/css/extraStyle.css">
+<div id="page">
+		<div id="header">
+			
+				<img src="images/movie.jpg" alt=""></a>
+			
+		</div>
 
-@{ ViewData["Title"] = "Index"; }
 
-<h2>Index</h2>
+		<div id="body" class="home">
+			<div class="header">
+				<div>
+					<h1> Movie</h1>
+					<!--<span><a href="contact.html" class="email">Enter Email</a>
+						<a href="contact.html" class="signup">Sign Up</a></span> 
+					<img src="images/runner.png" alt=""> -->
+				</div>
+			</div>
+			<div class="body">
+				<div>
+					<!--<h1>Food Content</h1> -->
+					<p>This Application is used XYZ Company to maintain their movie Data <br>
 
-@foreach (DataGov_API_Intro_6.Models.Park park in Model.data)
-{@(park.parkCode + " " + park.fullName + " " + park.latLong)
-                <br />
-  }
+						<b>The Company Users Can Add a New Movie or Update and Delete an Existing Ones </b><br>
+						<!--<b>Lorem Ipsum is simply dummy text </b><br>
+						<b>Lorem Ipsum is simply dummy text </b>-->
+
+					</p>
+					<a href=# class="more">Learn More</a>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div>
+				
+				<p>DIS Assignment #3</p>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,104 @@
+﻿@model DataGov_API_Intro_6.Models.Rootobject
+
+@{
+
+    ViewData["Title"] = "Rent Page";
+}
+<link rel="stylesheet" type="text/css" href="~/css/extraStyle.css">
+
+
+<div id="page">
+	
+				<div class="rentMov">
+					<h1 style="text-align:center;">ADD AND UPDATE A MOVIE! </h1> 
+					<div class="Rent3">
+						<div class="buttonMov">
+							<a href="./addMovie"><input type="button" value="Add a Movie" /></a>
+						</div>
+
+						<div class="buttonMov">
+							<a href="./EditMovie"><input type="button" value="Update a Movie" /></a>
+						</div>
+
+						<div class="buttonMov">
+							<a href="./DeleteMovie"><input type="button" value="Delete a Movie" /></a>
+						</div>
+					</div>
+
+					<div class="Rent2">
+<table style:"color=#111111 important;">
+<colgroup>
+<col width="20%">
+<col width="20%">
+<col width="20%">
+<col width="20%">
+<col width="20%">
+</colgroup>
+
+
+
+<thead>
+<tr style="height: 31px;">
+<th>IMdbId</th>
+<th>Title</th>
+<th>Synopsis</th>
+<th>Released Year</th>
+<th>IMDB Rating</th>
+
+
+</tr>
+</thead>
+<tbody>
+
+@foreach (DataGov_API_Intro_6.Models.Result item in Model.results)
+{
+
+
+
+<tr style="height: 75px;">
+<td> @item.imdbid</td>
+<td>@item.title</td>
+<td>@item.synopsis</td>
+<td><br>@item.released</td>
+<td>@item.imdbrating</td>
+
+<!--
+
+<td><a>@Html.ActionLink("Delete","Index","Home") </a></td>
+-->
+
+
+</tr>
+}
+
+
+
+
+
+
+</tbody>
+
+
+
+
+
+
+</table>
+					</div>
+
+					
+					
+					 
+				</div>
+				
+
+		
+		
+		
+		<div id="footer">
+			<div>
+				
+				<!--p>DIS Assignment #3</p>-->
+			</div>
+		</div>
+	</div>

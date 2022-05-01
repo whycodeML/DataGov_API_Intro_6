@@ -1,0 +1,105 @@
+﻿/*-----------------------Rent a Movie---------------------*/
+
+.rentMov {
+    width:80%;
+    
+    margin: auto;
+    min-height: 700px;
+}
+
+input[type="button"] {
+    background-color: #a61e4d;
+    border-radius: 4px;
+    color: #eee;
+    padding: 15px 25px;
+    border: none;
+}
+
+    input[type="button"]:hover {
+        background-color: #d6336c;
+    }
+
+.buttonMov {
+    width: 26%;
+    
+    float: left;
+    margin-left:7%;
+}
+.Rent1 {
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.Rent2 {
+    width: 80%;
+    margin: auto;
+    min-height: 100px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.Rent3 {
+    width: 60%; 
+    margin: auto;
+    min-height: 100px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #a61e4d;
+    color:#000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #d6336c;
+    }
+
+/*--------------chart--------------*/
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*-------------about---------------*/
+.aboutMem {
+   
+    width: 26%;
+    float: left;
+    margin-left: 3%;
+}
+.aboutMem2 {
+    width: 26%;
+    float: left;
+    margin-left: 10%;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 1028px) {
+    .buttonMov { width:100%; margin:20px 0 0 12px; padding-bottom: 30px;
+    }
+
+
+}

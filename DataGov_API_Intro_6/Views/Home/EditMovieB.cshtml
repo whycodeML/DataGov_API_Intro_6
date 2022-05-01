@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "addMovie Page";
+}
+<link rel="stylesheet" type="text/css" href="~/css/extraStyle.css">
+
+
+<div id="page">
+	
+				<div class="rentMov">
+					<div class="buttonMov">
+							<a href="./EditMovie"><input type="button" value="Back" /></a>
+					</div>
+					<h1>Edit a movie here! </h1>
+					
+					<div class="Rent1">
+						<form>
+						<label>Add Movie Id</label>
+						<input type="text" id="Movie" name="Movie" placeholder="Add movie id">
+
+						<label>Genre</label>
+						<select id="Genre" name="Genre">
+						  <option value="Action">Action</option>
+						  <option value="Adventure">Adventure</option>
+						  <option value="Comedy">Comedy</option>
+						  <option value="Crime">Crime</option>
+						  <option value="Documentry">Documentry</option>
+						  <option value="Drama">Drama</option>
+						  <option value="Fantasy">Fantasy</option>
+						  <option value="Horror">Horror</option>
+						  <option value="Mistery">Mistery</option>
+						  <option value="Romance">Romance</option>
+						  <option value="War">War</option>
+						</select>
+
+						<label>IMDB id</label>
+							<input for=imdbid type="text" name="imdbid" placeholder="IMDB id" disabled>
+
+
+
+							<label>Title</label>
+							<input for="title" type="text" name="title" placeholder="Title" required>
+
+
+
+							<label>IMDB Rating</label>
+							<input for="imdbrating" type="text" name="imdbrating" placeholder="IMDB Rating" required>
+
+
+
+							<label>Released Year</label>
+							<input for="released" type="number" name="released" placeholder="Released" required>
+							<br />
+							<br />
+
+
+							<label for="synopsis">Synopsis</label>
+							<textarea id="synopsis" name="synopsis" placeholder="Write overview.." style="height:200px"></textarea>
+
+
+
+							<label>Type</label>
+							<select id="type" name="type">
+							<option value="movie">movie</option>
+							</select>
+						
+
+						
+						<input type="submit" value="Submit">
+					  </form>
+  
+					</div>
+					
+				</div>
+				
+
+		
+		
+		
+		<div id="footer">
+			<div>
+				
+				<p>DIS Assignment #3</p>
+			</div>
+		</div>
+	</div>

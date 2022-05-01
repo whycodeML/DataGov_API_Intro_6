@@ -3,35 +3,33 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DataGov_API_Intro_6.Models
 {
-    public class Parks
+    
+    public class Rootobject
     {
         [Key]
-        public Guid Id { get; set; }
-        public int ParksId { get; set; }
-        public string total { get; set; }
-        public List<Park> data { get; set; }
-        public string limit { get; set; }
-        public int count { get; set; }
-        public string start { get; set; }
+        public int Id { get; set; }
+
+        public int page { get; set; }
+        public List<Result> results { get; set; }
+        
     }
 
-    public class Park
-    {
-        [Key]
+    public class Result
+    {[Key]
+    public int id { get; set; }
+        public Genre genres { get; set; }
+        public string imdbid { get; set; }
+        public string title { get; set; }
+        public float imdbrating { get; set; }
+        public int released { get; set; }
+        public string synopsis { get; set; }
+        public string type { get; set; }
+        public Rootobject root { get; set; }
+    }
+    public class Genre
+    { [Key]
         public Guid id { get; set; }
-        public string states { get; set; }
-        public string longitude { get; set; }
-        public string directionsInfo { get; set; }
-        public string directionsUrl { get; set; }
-        public string url { get; set; }
-        public string weatherInfo { get; set; }
         public string name { get; set; }
-        public string latLong { get; set; }
-        public string description { get; set; }
-        public string designation { get; set; }
-        public string parkCode { get; set; }
-        public string fullName { get; set; }
-        public string latitude { get; set; }
-        public Parks Parks { get; set; }
+        public List<Result> result { get; set; }
     }
 }

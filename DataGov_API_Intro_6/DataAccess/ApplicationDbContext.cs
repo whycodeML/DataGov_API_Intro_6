@@ -8,7 +8,9 @@ namespace DataGov_API_Intro_6.DataAccess
             base(options)
         { }
 
-        public DbSet<Parks> Parks { get; set; }
-        public DbSet<Park> Park { get; set; }
+        
+        public DbSet<Rootobject> Rootobject { get; set; }
+        public DbSet<Result> Result { get; set; }
+        public DbSet<Genre> Genre { get; set; }
     }
 }
